@@ -1,0 +1,12 @@
+html, body {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    border: 1px solid;
+    height: 500px;
+    width: 500px;
+    background-color: cornflowerblue;
+}
