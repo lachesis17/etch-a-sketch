@@ -6,6 +6,9 @@ html, body {
     overflow: hidden;
     background-color: rgb(88, 81, 138);
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #pageContainer {
@@ -27,19 +30,13 @@ html, body {
     margin: auto;
 }
 
-#headbox {
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    vertical-align: middle;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-}
-
 h1 {
     font-size: 70px;
     margin: unset;
+    position: fixed;
+    top: 0.5em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 p {
