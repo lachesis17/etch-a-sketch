@@ -1,14 +1,53 @@
 html, body {
-    display: flex;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
+    font-family: 'Yellowtail', sans-serif;
+    overflow: hidden;
+    background-color: rgb(88, 81, 138);
+    box-sizing: border-box;
 }
 
-#container {
-    border: 1px solid;
-    height: 500px;
-    width: 500px;
-    background-color: cornflowerblue;
+#pageContainer {
     display: flex;
+    align-items: center;
+    flex-direction:column;
+    padding: 25px;
+}
+
+#gridContainer {
+    border: 1px solid;
+    height: 600px;
+    width: 600px;
+    background-color: cornflowerblue;
+    display: grid;
+    font-family:  'Yellowtail', sans-serif;
+    grid-template-columns: repeat(16, 0.25fr);
+    grid-auto-rows: minmax(50px, auto);
     margin: auto;
+}
+
+#headbox {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    font-size: 70px;
+    margin: unset;
+}
+
+p {
+    margin: unset;
+}
+
+#gridSlider {
+    padding: 10px;
+    padding-right: 0;
+    transition: ease 0.2s;
 }
