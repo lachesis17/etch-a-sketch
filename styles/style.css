@@ -12,7 +12,7 @@ html, body {
 }
 
 #pageContainer {
-    display: flex;
+    display: grid;
     align-items: center;
     flex-direction:column;
     padding: 25px;
@@ -32,19 +32,44 @@ html, body {
 
 h1 {
     font-size: 70px;
-    margin: unset;
-    position: fixed;
-    top: 0.5em;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-p {
-    margin: unset;
+    margin: -1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 1px grey;
 }
 
 #gridSlider {
     padding: 10px;
     padding-right: 0;
     transition: ease 0.2s;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-shadow: 0 0 1px #000;
+    font-family: 'Yellowtail', sans-serif;
+    padding: 16px;
+}
+
+#wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
