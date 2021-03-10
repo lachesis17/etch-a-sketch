@@ -14,11 +14,13 @@
                 
                     <h1 id="title">Etch-A-Sketch</h1>
                         <div id="wrapper">
-                            <button id="button1">color</button>
+                            <label for="color" class="label" id="colorLab">color</label>
+                            <input type="color" id="color"></input>
                             <button id="button2">random</button>
                             <button id="button3">reset</button>
-                        </div>
-                            <input type="range" min="2" max="16" value="16" id="gridSlider" label="Grid size">
+                        </div> 
+                            <br><label for="gridSlider" class="label" id="sliderLab">Grid size 16x16</label><br>
+                            <input type="range" min="2" max="32" value="16" id="gridSlider" label="Grid size" oninput="makeCells(value, value)">
                                 <div id="gridContainer">
                             </div>
             </div>
