@@ -140,4 +140,5 @@ button {
     border: 1px groove #000;
     display: flex;
     outline: none;
+    background-color: #f0f0f0;
 }
