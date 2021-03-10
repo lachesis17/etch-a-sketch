@@ -4,6 +4,7 @@ let cell = document.createElement('div');
 let gridSize = document.getElementById('gridSlider');
 let reset = document.getElementById('button3');
 let griddles = document.querySelectorAll('.grid');
+let sliderLabel = document.getElementById('sliderLab');
 
 function makeCells(rows, cols) {
   removeGrid(container);
@@ -12,6 +13,7 @@ function makeCells(rows, cols) {
   for (i = 0; i < (rows * cols); i++) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid";
+    sliderLabel.innerHTML =  `${rows} x ${cols}`;
     cell.onmouseover = function() {
       cell.style.backgroundColor = color.value;
       cell.style.transition = "0.15s ease-in-out";
