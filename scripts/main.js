@@ -5,6 +5,7 @@ let gridSize = document.getElementById('gridSlider');
 let reset = document.getElementById('button3');
 let griddles = document.querySelectorAll('.grid');
 let sliderLabel = document.getElementById('sliderLab');
+let random = document.getElementById('button2');
 
 function makeCells(rows, cols) {
   removeGrid(container);
@@ -43,3 +44,8 @@ function removeGrid(element) {
   gridSize.addEventListener('input', function() {
       makeCells(this.value, this.value)
   });
+
+random.onclick = function () {
+  color.value = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+  cell.style.backgroundColor = color.value;
+}
