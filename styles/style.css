@@ -1,5 +1,4 @@
 html, body {
-    
     scroll-behavior: smooth;
     font-family: 'Yellowtail', sans-serif;
     background-color: rgb(88, 81, 138);
@@ -82,60 +81,14 @@ button {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.label {
-    font-size: 26px;
-    text-align: center;
-    padding-top: 16px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-}
-
-#color {
-    display: none;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 20px;
-}
-
-#colorLab {
-    display: flex;
-    flex-direction: row;
-    width: 70px;
-    height: 18px;
-    border-radius: 10px;
-    outline: none;
-    text-align: center;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    text-shadow: 0 0 1px #000;
-    font-family: 'Yellowtail', sans-serif;
-    padding: 16px;
-    background-color: rgb(239, 239, 239);
-    border: 1px solid;
-}
-
-#colorLab:hover {
-    box-shadow: 1px 1px 1px #000;
-}
-
-#colorLab:active {
-    box-shadow: -1px -1px 1px #000;
+    padding-bottom: 8px;
 }
 
 #sliderLab {
-    padding: 16px;
-    margin-top: 5%;
     font-size: 40px;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
-    
+    margin-top: -10px;
 }
 
 .grid {
@@ -145,4 +98,26 @@ button {
     display: flex;
     outline: none;
     background-color: #f0f0f0;
+}
+
+#rgbToggle {
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+    margin: 0;
+}
+
+#color {
+    width: 75px;
+    height: 75px;
+    border-radius: 5%;
+    padding: none;
+    margin: 0;
+}
+
+#rgbBox {
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+    margin-bottom: -10%;
 }
