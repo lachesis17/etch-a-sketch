@@ -14,15 +14,19 @@ function makeCells(rows, cols) {
   for (i = 0; i < (rows * cols); i++) {
     let cell = document.createElement("div");
     container.appendChild(cell).className = "grid";
-    sliderLabel.innerHTML =  `${rows} x ${cols}`;
+    sliderLabel.innerHTML =  `${rows} x ${cols}`; 
     cell.onmouseover = function() {
-      cell.style.backgroundColor = color.value;
+      cell.style.background = color.value;
       cell.style.transition = "0.15s ease-in-out";
-      cell.addEventListener('mousedown', function() {
-          cell.style.backgroundColor = "white";
+        cell.ontouchmove = function() {
+          cell.style.background = color.value;
           cell.style.transition = "0.15s ease-in-out";
+            cell.addEventListener('mousedown', function() {
+              cell.style.background = "white";
+              cell.style.transition = "0.15s ease-in-out";
       })
   }
+}
 }
 }
 
