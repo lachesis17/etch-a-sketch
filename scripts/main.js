@@ -9,71 +9,90 @@ let color = document.getElementById('color');
 const rgbToggle = document.getElementById('rgbToggle');
 let rgb = false;
 
-function makeCells(rows, cols) {
+  function makeCells(rows, cols) {
   removeGrid(container);
-  container.style.setProperty('--grid-rows', rows);
-  container.style.setProperty('--grid-cols', cols);
-  for (i = 0; i < (rows * cols); i++) {
-    let cell = document.createElement("div");
-    container.appendChild(cell);
-    cell.setAttribute("class", "grid");
-    sliderLabel.innerHTML = `${rows} x ${cols}`; 
-      cell.addEventListener("mouseover", function() {
-        if (rgb === true) {
-          rbgMode();
-              cell.style.backgroundColor = `${rgbColors}`;
-              cell.style.transition = "0.15s ease-in";
-      }
-      else {
-              cell.style.backgroundColor = color.value;
-              cell.style.transition = "0.15s ease-in";
-      }
-      });
-    }  
+    container.style.setProperty('--grid-rows', rows);
+    container.style.setProperty('--grid-cols', cols);
+      for (i = 0; i < (rows * cols); i++) {
+        sliderLabel.innerHTML = `${rows} x ${cols}`; 
+          let cell = document.createElement("div");
+          container.appendChild(cell);
+          cell.setAttribute("class", "grid");
+          cell.addEventListener("mouseover", function() {
+            if (rgb === true) {
+              rbgMode();
+                cell.style.backgroundColor = `${rgbColors}`;
+                cell.style.transition = "0.15s ease-in";
+            } else {
+                cell.style.backgroundColor = color.value;
+                cell.style.transition = "0.15s ease-in";
+              }
+          });
+      }  
   }
-
-function removeGrid(element) {
+  
+  function removeGrid(element) {
     while (element.firstChild) {
       element.removeChild(element.firstChild);
     }
   }
   
   window.addEventListener('load', (event) => {
-      makeCells(16,16);
-    });
+    makeCells(16,16);
+  });
 
-    color.addEventListener('change', function() {
-      this.value = color.value;
-    });
+  color.addEventListener('change', function() {
+    this.value = color.value;
+  });
   
   reset.onclick = () => {
-      makeCells(16,16);
-      gridSize.value = 16;
+    makeCells(16,16);
+    gridSize.value = 16;
   }
   
   gridSize.addEventListener('input', function() {
-      makeCells(this.value, this.value)
+    makeCells(this.value, this.value)
   });
 
   clear.onclick = function () {
     let size = gridSize.value;
-  makeCells(size, size);
+    makeCells(size, size);
   }
 
   random.onclick = function () {
-  color.value = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
-  cell.style.backgroundColor = color.value;
+    color.value = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+    cell.style.backgroundColor = color.value;
   }
 
   rgbToggle.addEventListener('change', function() {
-  if (this.checked) {
-    rgb = true;
-  }
-  else {
-    rgb = false;
+    if (this.checked) {
+      rgb = true;
+    } else {
+      rgb = false;
     }
   });
 
   function rbgMode() {
     rgbColors = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');;
   }
+
+  //mobile support
+
+  container.addEventListener("touchmove", function(e) {
+    let touch = e.touches[0];
+    let focus = document.elementFromPoint(touch.clientX, touch.clientY);
+      if (rgb === true) {
+        rbgMode();
+          focus.style.backgroundColor = `${rgbColors}`;
+          cell.style.transition = "0.15s ease-in";
+      } else {
+          focus.style.backgroundColor = color.value;
+          cell.style.transition = "0.15s ease-in";
+        }
+    });
+
+  container.addEventListener("touchstart", function(e) {
+    if (e.touches.length == 1) {
+        e.preventDefault();
+    }
+  });
