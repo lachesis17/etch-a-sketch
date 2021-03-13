@@ -9,7 +9,7 @@ let color = document.getElementById('color');
 const rgbToggle = document.getElementById('rgbToggle');
 const borderTogggle = document.getElementById('borderBut');
 let rgb = false;
-let noBorder = false;
+let noBorder = true;
 
   function makeCells(rows, cols) {
   removeGrid(container);
@@ -81,9 +81,9 @@ let noBorder = false;
 
   borderTogggle.addEventListener('change', function() {
     if (this.checked) {
-      noBorder = true;
-    } else {
       noBorder = false;
+    } else {
+      noBorder = true;
     }
   });
 
