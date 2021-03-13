@@ -18,7 +18,7 @@ body {
 
 #pageContainer {
     background: initial !important;
-    height:max-content;
+    height:fit-content;
     display: inline-block;
     align-items: center;
     flex-direction:column;
@@ -221,6 +221,13 @@ button {
     #pageContainer, #gridContainer {
     height: 350px;
     width: 350px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+    #pageContainer, #gridContainer {
+    height: 400px;
+    width: 400px;
   }
 }
 
