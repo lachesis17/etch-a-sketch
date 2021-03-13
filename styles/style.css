@@ -1,13 +1,14 @@
 html, body {
     scroll-behavior: smooth;
     font-family: 'Yellowtail', sans-serif;
-    background: url('../images/back.png') no-repeat;
+    background-color: #f0f0f0 !important;
+    background: url('../images/back.png') !important;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    height:100%;
+    height:max-content
 }
 
 body {

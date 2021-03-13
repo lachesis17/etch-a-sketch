@@ -21,7 +21,7 @@ let noBorder = true;
           container.appendChild(cell);
           cell.setAttribute("class", "grid");
             if (noBorder === true) {
-              cell.style.border = "0";
+              cell.style.border = "none";
             } else if (noBorder === false) {
               cell.style.border = "1px groove #000;";
             }
