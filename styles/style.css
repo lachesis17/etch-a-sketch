@@ -44,6 +44,7 @@ body {
     font-size: 0;
     padding: none;
     box-shadow: 0px 0px 12px #000;
+    justify-content: center;
 }
 
 h1 {
@@ -136,7 +137,8 @@ button {
 #rgbBox {
     display: flex;
     justify-content: space-evenly;
-    margin: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: initial !important;
 }
 
@@ -335,26 +337,26 @@ button {
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     #gridContainer {
-        height: 275px;
-        width: 275px;
+        height: 290px;
+        width: 290px;
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     #pageContainer {
-        width: 275px;
+        width: 300px;
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     #gridSlider {
         width: 125px;
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 400px) {
     .sliderLab {
         font-size: 15px;
     }
