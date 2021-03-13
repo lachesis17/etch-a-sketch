@@ -147,14 +147,14 @@ button {
 
 .rgbImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw.png');
+    background: url('/images/RGBbw.png');
     width: 75px;
     height: 75px;
  }
 
  .rgbImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB.png');
+    background: url('/images/RGB.png');
     width: 75px;
     height: 75px;
  }
@@ -165,14 +165,14 @@ button {
 
 .borderImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border.png');
+    background: url('/images/border.png');
     width: 75px;
     height: 75px;
  }
 
  .borderImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder.png');
+    background: url('/images/noborder.png');
     width: 75px;
     height: 75px;
  }
