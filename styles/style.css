@@ -290,3 +290,14 @@ button {
     }
   }
 
+  @media screen and (max-width: 350px) {
+    #gridSlider {
+        width: 125px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .sliderLab {
+        font-size: 15px;
+    }
+  }
