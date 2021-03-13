@@ -277,9 +277,16 @@ button {
     }
   }
 
-  @media screen and (max-height: 500px) {
-    #gridSlider {
-        width: 100px;
+  @media screen and (max-width: 350px) {
+    #gridContainer {
+        height: 275px;
+        width: 275px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    #pageContainer {
+        width: 275px;
     }
   }
 
