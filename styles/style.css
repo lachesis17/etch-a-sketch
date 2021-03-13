@@ -231,6 +231,19 @@ button {
   }
 }
 
+@media screen and (max-height: 1000px) {
+    .sliderLab {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-height: 1000px) {
+    #gridSlider {
+    width: 250px;
+  }
+}
+
+
 @media screen and (max-height: 800px) {
     h1 {
    font-size: 40px;
