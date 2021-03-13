@@ -303,35 +303,35 @@ button {
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     #pageContainer {
         height: 350px;
         width: 350px;
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     #gridSlider {
         width: 125px;
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     h1 {
         font-size: 30px;
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     .sliderLab {
         font-size: 20px;
     }
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 550px) {
     #gridContainer {
-        height: 325px;
-        width: 325px;
+        height: 340px;
+        width: 340px;
     }
   }
 
