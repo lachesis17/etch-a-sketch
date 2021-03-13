@@ -35,6 +35,7 @@ html, body {
     outline: none;
     font-size: 0;
     padding: none;
+    box-shadow: 0px 0px 12px #000;
 }
 
 h1 {
@@ -44,7 +45,7 @@ h1 {
     margin: auto;
     display: block;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     background-color: initial !important;
 }
 
@@ -65,19 +66,20 @@ button {
     outline: none;
     text-align: center;
     vertical-align: middle;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 25px;
     text-shadow: 0 0 1px #000;
     font-family: 'Yellowtail', sans-serif;
     padding: 16px;
     background-color: rgb(239, 239, 239) !important;
+    box-shadow: 0px 0px 5px #000;
 }
 
 #wrapper {
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content:space-around;
     background-color: transparent !important;
 }
 
@@ -86,17 +88,21 @@ button {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
     text-align: center;
     padding-bottom: 8px;
+    vertical-align: middle;
 }
 
-#sliderLab {
+.sliderLab {
     font-size: 35px;
     color: whitesmoke;
     text-shadow: 2px 2px 2px black;
-    margin-top: -20px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding-bottom: -10px;
     background-color: initial !important;
+    display: inline-block;
 }
 
 .grid {
@@ -108,14 +114,6 @@ button {
     background-color: #f0f0f0;
 }
 
-#rgbToggle {
-    width: 75px;
-    height: 75px;
-    border-radius: 10%;
-    margin: 0;
-    background-color: initial !important;
-}
-
 #color {
     width: 75px;
     height: 75px;
@@ -123,18 +121,155 @@ button {
     padding: none;
     margin: 0;
     background-color: rgb(239, 239, 239) !important;
+    box-shadow: 0px 0px 5px #000;
 }
 
 #rgbBox {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 2%;
-    margin-bottom: -9%;
     background-color: initial !important;
 }
 
-#borderBut {
-    height: 20px;
-    width: 50px;
-    margin-left: 4px;
+.check {
+    width: 75px;
+    height: 75px;
+    border-radius: 15%;
+    padding: none;
+    margin: 0;
+    background-color: rgb(239, 239, 239) !important;
+    box-shadow: 0px 0px 5px #000;
 }
+
+.rgbImg input[type="checkbox"] {
+    display: none;
+}
+
+.rgbImg input[type="checkbox"]+label {
+    display: inline-block;
+    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw.png');
+    width: 75px;
+    height: 75px;
+ }
+
+ .rgbImg input[type="checkbox"]:checked + label {
+    display: inline-block;
+    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB.png');
+    width: 75px;
+    height: 75px;
+ }
+
+ .borderImg input[type="checkbox"] {
+    display: none;
+}
+
+.borderImg input[type="checkbox"]+label {
+    display: inline-block;
+    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border.png');
+    width: 75px;
+    height: 75px;
+ }
+
+ .borderImg input[type="checkbox"]:checked + label {
+    display: inline-block;
+    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder.png');
+    width: 75px;
+    height: 75px;
+ }
+
+ @media screen and (max-height: 900px) {
+    #color, #rgbImgLabel, #borderImgLabel {
+        width: 35px;
+        height: 35px;
+    }
+  }
+
+  @media screen and (max-height: 900px) {
+    .rgbImg input[type="checkbox"]+label {
+        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw35.png');
+    }
+  }
+  
+  @media screen and (max-height: 900px) {
+    .rgbImg input[type="checkbox"]:checked + label {
+        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB35.png');
+    }
+  }
+
+  @media screen and (max-height: 900px) {
+    .borderImg input[type="checkbox"]+label {
+        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border35.png');
+    }
+  }
+  
+  @media screen and (max-height: 900px) {
+    .borderImg input[type="checkbox"]:checked + label {
+        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder35.png');
+    }
+  }
+
+@media screen and (max-height: 900px) {
+    #pageContainer, #gridContainer {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+    h1 {
+   font-size: 40px;
+  }
+  }
+
+  @media screen and (max-height: 900px) {
+    button {
+        width: 75px;
+        height: 25px;
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-height: 900px) {
+    .sliderLab {
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-height: 900px) {
+    #gridSlider {
+        width: 150px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .sliderLab {
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    button {
+        width: 50px;
+        height: 20px;
+        font-size: 15px;
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    #pageContainer, #gridContainer {
+        height: 250px;
+        width: 250px;
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    #gridSlider {
+        width: 100px;
+    }
+  }

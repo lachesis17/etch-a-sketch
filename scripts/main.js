@@ -3,11 +3,13 @@ let clear = document.getElementById('button1');
 let cell = document.createElement('div');
 let gridSize = document.getElementById('gridSlider');
 let reset = document.getElementById('button3');
-let sliderLabel = document.getElementById('sliderLab');
+let sliderLabel = document.getElementById('sliderLab2');
 let random = document.getElementById('button2');
 let color = document.getElementById('color');
 const rgbToggle = document.getElementById('rgbToggle');
+const borderTogggle = document.getElementById('borderBut');
 let rgb = false;
+let noBorder = false;
 
   function makeCells(rows, cols) {
   removeGrid(container);
@@ -18,15 +20,20 @@ let rgb = false;
           let cell = document.createElement("div");
           container.appendChild(cell);
           cell.setAttribute("class", "grid");
-          cell.addEventListener("mouseover", function() {
-            if (rgb === true) {
-              rbgMode();
-                cell.style.backgroundColor = `${rgbColors}`;
-                cell.style.transition = "0.15s ease-in";
-            } else {
-                cell.style.backgroundColor = color.value;
-                cell.style.transition = "0.15s ease-in";
-              }
+            if (noBorder === true) {
+              cell.style.border = "0";
+            } else if (noBorder === false) {
+              cell.style.border = "1px groove #000;";
+            }
+              cell.addEventListener("mouseover", function() {
+                if (rgb === true ) {
+                  rbgMode();
+                    cell.style.backgroundColor = `${rgbColors}`;
+                    cell.style.transition = "0.15s ease-in";
+                } else {
+                    cell.style.backgroundColor = color.value;
+                    cell.style.transition = "0.15s ease-in";
+                  }
           });
       }  
   }
@@ -72,8 +79,16 @@ let rgb = false;
     }
   });
 
+  borderTogggle.addEventListener('change', function() {
+    if (this.checked) {
+      noBorder = true;
+    } else {
+      noBorder = false;
+    }
+  });
+
   function rbgMode() {
-    rgbColors = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');;
+    rgbColors = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
   }
 
   //mobile support
