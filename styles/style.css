@@ -147,14 +147,14 @@ button {
 
 .rgbImg input[type="checkbox"]+label {
     display: inline-block;
-    background-image: url(/images/RGBbw.png);
+    background: url(images/RGBbw.png);
     width: 75px;
     height: 75px;
  }
 
  .rgbImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background-image: url(/images/RGB.png);
+    background: url(/images/RGB.png);
     width: 75px;
     height: 75px;
  }
@@ -165,14 +165,14 @@ button {
 
 .borderImg input[type="checkbox"]+label {
     display: inline-block;
-    background-image: url(/images/border.png);
+    background: url(images/border.png);
     width: 75px;
     height: 75px;
  }
 
  .borderImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background-image: url(/images/noborder.png);
+    background: url(images/noborder.png);
     width: 75px;
     height: 75px;
  }
@@ -186,25 +186,25 @@ button {
 
   @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]+label {
-        background-image: url(/images/RGBbw35.png);
+        background: url(images/RGBbw35.png);
     }
   }
   
   @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]:checked + label {
-        background-image: url(/images/RGB35.png);
+        background: url(images/RGB35.png);
     }
   }
 
   @media screen and (max-height: 900px) {
     .borderImg input[type="checkbox"]+label {
-        background-image: url(/images/border35.png);
+        background: url(images/border35.png);
     }
   }
   
   @media screen and (max-height: 800px) {
     .borderImg input[type="checkbox"]:checked + label {
-        background-image: url(/images/noborder35.png);
+        background: url(images/noborder35.png);
     }
   }
 
