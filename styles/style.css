@@ -1,7 +1,7 @@
 html, body {
     scroll-behavior: smooth;
     font-family: 'Yellowtail', sans-serif;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/back.png') no-repeat;
+    background: url('../images/back.png') no-repeat;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -154,14 +154,14 @@ button {
 
 .rgbImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw.png');
+    background: url('../images/RGBbw.png');
     width: 75px;
     height: 75px;
  }
 
  .rgbImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB.png');
+    background: url('../images/RGB.png');
     width: 75px;
     height: 75px;
  }
@@ -172,14 +172,14 @@ button {
 
 .borderImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder.png');
+    background: url('../images/noborder.png');
     width: 75px;
     height: 75px;
  }
 
  .borderImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border.png');
+    background: url('../images/border.png');
     width: 75px;
     height: 75px;
  }
@@ -193,25 +193,25 @@ button {
 
   @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]+label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw35.png');
+        background: url('../images/RGBbw35.png');
     }
   }
   
   @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]:checked + label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB35.png');
+        background: url('../images/RGB35.png');
     }
   }
 
   @media screen and (max-height: 800px) {
     .borderImg input[type="checkbox"]+label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder35.png');
+        background: url('../images/noborder35.png');
     }
   }
   
   @media screen and (max-height: 800px) {
     .borderImg input[type="checkbox"]:checked + label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border35.png');
+        background: url('../images/border35.png');
     }
   }
 
