@@ -13,6 +13,7 @@ html, body {
 
 body {
     background: initial !important;
+    height: max-content;
 }
 
 #pageContainer {
