@@ -233,13 +233,13 @@ button {
 
 @media screen and (max-height: 1000px) {
     .sliderLab {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
 @media screen and (max-height: 1000px) {
     #gridSlider {
-    width: 250px;
+    width: 200px;
   }
 }
 
@@ -300,6 +300,38 @@ button {
     #pageContainer, #gridContainer {
         height: 250px;
         width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #pageContainer {
+        height: 350px;
+        width: 350px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #gridSlider {
+        width: 125px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .sliderLab {
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    #gridContainer {
+        height: 325px;
+        width: 325px;
     }
   }
 
