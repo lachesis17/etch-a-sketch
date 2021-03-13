@@ -186,25 +186,25 @@ button {
 
   @media screen and (max-height: 900px) {
     .rgbImg input[type="checkbox"]+label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGBbw35.png');
+        background: url('/images/RGBbw35.png');
     }
   }
   
   @media screen and (max-height: 900px) {
     .rgbImg input[type="checkbox"]:checked + label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/RGB35.png');
+        background: url('/images/RGB35.png');
     }
   }
 
   @media screen and (max-height: 900px) {
     .borderImg input[type="checkbox"]+label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/border35.png');
+        background: url('/images/border35.png');
     }
   }
   
   @media screen and (max-height: 900px) {
     .borderImg input[type="checkbox"]:checked + label {
-        background: url('file:///D:/Desktop/odin-projects/etch-a-sketch/images/noborder35.png');
+        background: url('/images/noborder35.png');
     }
   }
 
