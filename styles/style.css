@@ -246,6 +246,12 @@ button {
 
   @media screen and (max-height: 800px) {
     #gridSlider {
+        width: 150px;
+    }
+  }
+
+  @media screen and (max-height: 500px) {
+    #gridSlider {
         width: 125px;
     }
   }
