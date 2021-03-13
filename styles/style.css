@@ -147,14 +147,14 @@ button {
 
 .rgbImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('/images/RGBbw.png');
+    background: url('images/RGBbw.png');
     width: 75px;
     height: 75px;
  }
 
  .rgbImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('/images/RGB.png');
+    background: url('images/RGB.png');
     width: 75px;
     height: 75px;
  }
@@ -165,63 +165,63 @@ button {
 
 .borderImg input[type="checkbox"]+label {
     display: inline-block;
-    background: url('/images/border.png');
+    background: url('images/border.png');
     width: 75px;
     height: 75px;
  }
 
  .borderImg input[type="checkbox"]:checked + label {
     display: inline-block;
-    background: url('/images/noborder.png');
+    background: url('images/noborder.png');
     width: 75px;
     height: 75px;
  }
 
- @media screen and (max-height: 900px) {
+ @media screen and (max-height: 800px) {
     #color, #rgbImgLabel, #borderImgLabel {
         width: 35px;
         height: 35px;
     }
   }
 
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]+label {
-        background: url('/images/RGBbw35.png');
+        background: url('images/RGBbw35.png');
     }
   }
   
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     .rgbImg input[type="checkbox"]:checked + label {
-        background: url('/images/RGB35.png');
+        background: url('images/RGB35.png');
     }
   }
 
   @media screen and (max-height: 900px) {
     .borderImg input[type="checkbox"]+label {
-        background: url('/images/border35.png');
+        background: url('images/border35.png');
     }
   }
   
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     .borderImg input[type="checkbox"]:checked + label {
-        background: url('/images/noborder35.png');
+        background: url('images/noborder35.png');
     }
   }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 800px) {
     #pageContainer, #gridContainer {
     height: 350px;
     width: 350px;
   }
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 800px) {
     h1 {
    font-size: 40px;
   }
   }
 
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     button {
         width: 75px;
         height: 25px;
@@ -229,13 +229,13 @@ button {
     }
   }
 
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     .sliderLab {
         font-size: 20px;
     }
   }
 
-  @media screen and (max-height: 900px) {
+  @media screen and (max-height: 800px) {
     #gridSlider {
         width: 150px;
     }
