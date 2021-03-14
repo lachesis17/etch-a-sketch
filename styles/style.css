@@ -2,13 +2,14 @@ html, body {
     scroll-behavior: smooth;
     font-family: 'Yellowtail', sans-serif;
     background-color: #f0f0f0 !important;
-    background: url('../images/back.png') !important;
+    background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%) !important;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
-    height:max-content
+    height:100%;
+    overflow:unset;
 }
 
 body {
@@ -26,6 +27,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-top: -5%;
     text-align: center;
 }
 
@@ -220,14 +222,14 @@ button {
   }
 
 @media screen and (max-height: 800px) {
-    #pageContainer, #gridContainer {
+   #gridContainer {
     height: 350px;
     width: 350px;
   }
 }
 
 @media screen and (max-height: 1000px) {
-    #pageContainer, #gridContainer {
+    #gridContainer {
     height: 400px;
     width: 400px;
   }
@@ -298,17 +300,10 @@ button {
     }
   }
 
-  @media screen and (max-height: 500px) {
-    #pageContainer, #gridContainer {
-        height: 250px;
-        width: 250px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    #pageContainer {
-        height: 350px;
-        width: 350px;
+  @media screen and (max-height: 600px) {
+    #gridContainer {
+        height: 325px;
+        width: 325px;
     }
   }
 
