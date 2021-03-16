@@ -128,6 +128,15 @@ button {
     background-color: #f0f0f0;
 }
 
+.gridBord {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
 #color {
     width: 75px;
     height: 75px;
@@ -249,7 +258,6 @@ button {
   }
 }
 
-
 @media screen and (max-height: 800px) {
     h1 {
    font-size: 40px;
@@ -306,6 +314,19 @@ button {
     #gridContainer {
         height: 325px;
         width: 325px;
+    }
+  }
+
+  @media screen and (max-height: 400px) {
+    #gridContainer {
+        height: 175px;
+        width: 175px;
+    }
+  }
+
+  @media screen and (max-height: 400px) {
+    #pageContainer {
+        width: 275px;
     }
   }
 

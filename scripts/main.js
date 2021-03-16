@@ -19,21 +19,20 @@ let noBorder = true;
         sliderLabel.innerHTML = `${rows} x ${cols}`; 
           let cell = document.createElement("div");
           container.appendChild(cell);
-          cell.setAttribute("class", "grid");
-            if (noBorder === true) {
-              cell.style.border = "none";
-            } else if (noBorder === false) {
-              cell.style.border = "1px groove #000;";
-            }
-              cell.addEventListener("mouseover", function() {
-                if (rgb === true ) {
-                  rbgMode();
-                    cell.style.backgroundColor = `${rgbColors}`;
-                    cell.style.transition = "0.15s ease-in";
-                } else {
-                    cell.style.backgroundColor = color.value;
-                    cell.style.transition = "0.15s ease-in";
-                  }
+          if (borderBut.checked) {
+            cell.setAttribute("class", "grid");
+          } else {
+            cell.setAttribute("class", "gridBord");
+          }
+            cell.addEventListener("mouseover", function() {
+              if (rgb === true ) {
+                rbgMode();
+                  cell.style.backgroundColor = `${rgbColors}`;
+                  cell.style.transition = "0.15s ease-in";
+              } else {
+                  cell.style.backgroundColor = color.value;
+                  cell.style.transition = "0.15s ease-in";
+                }
           });
       }  
   }
@@ -79,17 +78,24 @@ let noBorder = true;
     }
   });
 
-  borderTogggle.addEventListener('change', function() {
-    if (this.checked) {
-      noBorder = false;
-    } else {
-      noBorder = true;
-    }
-  });
-
   function rbgMode() {
     rgbColors = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
   }
+
+  borderTogggle.addEventListener('change', function() {
+    if (this.checked) {
+      const squares = document.querySelectorAll('.gridBord');
+      squares.forEach((square) => {
+        square.classList.remove("gridBord");
+        square.classList.add("grid");
+    })} else {
+        const squares = document.querySelectorAll('.grid');
+        squares.forEach((square) => {
+          square.classList.remove("grid");
+          square.classList.add("gridBord");
+      })
+    }
+  });
 
   //mobile support
 
@@ -111,3 +117,4 @@ let noBorder = true;
         e.preventDefault();
     }
   });
+
