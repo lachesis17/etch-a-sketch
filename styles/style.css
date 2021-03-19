@@ -323,8 +323,8 @@ button {
 
   @media screen and (max-height: 400px) {
     #gridContainer {
-        height: 175px;
-        width: 175px;
+        height: 260px;
+        width: 260px;
     }
   }
 
