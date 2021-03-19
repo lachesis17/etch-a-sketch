@@ -165,6 +165,10 @@ button {
     box-shadow: 0px 0px 5px #000;
 }
 
+.rgbImg, .borderImg {
+  background-color: initial !important;
+}
+
 .rgbImg input[type="checkbox"] {
     display: none;
 }
