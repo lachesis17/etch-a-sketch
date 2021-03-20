@@ -237,149 +237,55 @@ button {
   }
 
 @media screen and (max-height: 800px) {
-   #gridContainer {
-    height: 350px;
-    width: 350px;
+   #pageContainer {
+    transform: scale(0.8);
   }
 }
 
-@media screen and (max-height: 1000px) {
-    #gridContainer {
-    height: 400px;
-    width: 400px;
-  }
+@media screen and (max-height: 600px) {
+  #pageContainer {
+   transform: scale(0.6);
+ }
 }
 
-@media screen and (max-height: 1000px) {
-    .sliderLab {
-    font-size: 25px;
-  }
+@media screen and (max-height: 500px) {
+  #pageContainer {
+   transform: scale(0.5);
+ }
 }
 
-@media screen and (max-height: 1000px) {
-    #gridSlider {
-    width: 200px;
-  }
+@media screen and (max-height: 400px) {
+  #pageContainer {
+   transform: scale(0.4);
+ }
 }
 
-@media screen and (max-height: 800px) {
-    h1 {
-   font-size: 40px;
-  }
-  }
+@media screen and (max-height: 300px) {
+  #pageContainer {
+   transform: scale(0.3);
+ }
+}
 
-  @media screen and (max-height: 800px) {
-    button {
-        width: 75px;
-        height: 25px;
-        font-size: 18px;
-    }
-  }
+@media screen and (max-width: 700px) {
+  #pageContainer {
+   transform: scale(0.8);
+ }
+}
 
-  @media screen and (max-height: 800px) {
-    .sliderLab {
-        font-size: 20px;
-    }
-  }
+@media screen and (max-width: 600px) {
+  #pageContainer {
+   transform: scale(0.7);
+ }
+}
 
-  @media screen and (max-height: 800px) {
-    #gridSlider {
-        width: 150px;
-    }
-  }
+@media screen and (max-width: 500px) {
+  #pageContainer {
+   transform: scale(0.6);
+ }
+}
 
-  @media screen and (max-height: 500px) {
-    #gridSlider {
-        width: 100px;
-    }
-  }
-  
-  @media screen and (max-height: 500px) {
-    .sliderLab {
-        font-size: 15px;
-    }
-  }
-
-  @media screen and (max-height: 500px) {
-    h1 {
-        font-size: 20px;
-    }
-  }
-
-  @media screen and (max-height: 500px) {
-    button {
-        width: 50px;
-        height: 20px;
-        font-size: 15px;
-    }
-  }
-
-  @media screen and (max-height: 600px) {
-    #gridContainer {
-        height: 325px;
-        width: 325px;
-    }
-  }
-
-  @media screen and (max-height: 400px) {
-    #gridContainer {
-        height: 260px;
-        width: 260px;
-    }
-  }
-
-  @media screen and (max-height: 400px) {
-    #pageContainer {
-        width: 275px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    #gridSlider {
-        width: 125px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    h1 {
-        font-size: 30px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    .sliderLab {
-        font-size: 20px;
-    }
-  }
-
-  @media screen and (max-width: 550px) {
-    #gridContainer {
-        height: 340px;
-        width: 340px;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    #gridContainer {
-        height: 290px;
-        width: 290px;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    #pageContainer {
-        width: 300px;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    #gridSlider {
-        width: 125px;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .sliderLab {
-        font-size: 15px;
-    }
-  }
+@media screen and (max-width: 250px) {
+  #pageContainer {
+   transform: scale(0.5);
+ }
+}
